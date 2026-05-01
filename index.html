@@ -4,537 +4,621 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paytm Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- <h1>PayTM Clone !</h1> -->   
-     <div class="bg" style="background-color: #e0f5fd;min-height: 130vh;">
-            <nav class=" bg-white">
-                <ul class="list-unstyled justify-content-around container list-inline align-items-center" style="width: auto; ">
-                    <li>
-                        <img src="images/svg_images/logo.svg" alt="">
+    
+    <nav class="navbar navbar-expand-lg sticky-top  bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/svg_images/logo.svg" alt="Paytm Logo" height="40" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#consumer">Paytm for Consumer</a>
                     </li>
-                    <li class="item h6 ">Paytm for Consumer</li>
-                    <li class="item h6 ">Paytm For Business</li>
-                    <li class="item h6 ">Investor Relations</li>
-                    <li class="item h6 ">Company</li>
-                    <li class="item h6 ">Career</li>
-                    <li class="item h6 ">Sign in</li>
-                </ul>
-            </nav>
-
-            <div class="d-flex justify-content-between  container">
-                <ul class="icon list-unstyled d-flex">
-
-                    <li class="item h6 border-bottom border-primary">
-                        <img src="images/svg_images/eb6953f1..svg" alt="">
-                        Flights
+                    <li class="nav-item">
+                        <a class="nav-link" href="#business">Paytm For Business</a>
                     </li>
-                    <li class="item h6 ">
-                        <img src="images/svg_images/df0e26a9..svg" alt="">
-                        Bus
+                    <li class="nav-item">
+                        <a class="nav-link" href="#investor">Investor Relations</a>
                     </li>
-                    <li class="item h6 ">
-                        <img src="images/svg_images/e398bd37..svg" alt="">
-                        Trains
+                    <li class="nav-item">
+                        <a class="nav-link" href="#company">Company</a>
                     </li>
-                    <li class="item h6 ">
-                        <img src="images/svg_images/add4d679..svg" alt="">
-                        Intl. Flights
+                    <li class="nav-item">
+                        <a class="nav-link" href="#career">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-paytm ms-lg-3 px-3 mt-2 mt-lg-0" href="#signin">Sign In</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </nav>
 
-                <img src="images/svg_images/Paytm_Travel_Logo.svg" alt="" class=" img" style="width: 15%;">
-             </div> 
+    
+    <div class="bg py-4 py-lg-5" id="consumer">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+                <ul class="nav nav-pills flex-wrap">
+                    <li class="nav-item">
+                        <a class="nav-link active d-flex align-items-center" href="#">
+                            <img src="images/svg_images/eb6953f1..svg" alt="Flights" class="me-2" style="height: 20px;">
+                            <span>Flights</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            <img src="images/svg_images/df0e26a9..svg" alt="Bus" class="me-2" style="height: 20px;">
+                            <span>Bus</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            <img src="images/svg_images/e398bd37..svg" alt="Trains" class="me-2" style="height: 20px;">
+                            <span>Trains</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center" href="#">
+                            <img src="images/svg_images/add4d679..svg" alt="Intl Flights" class="me-2" style="height: 20px;">
+                            <span>Intl. Flights</span>
+                        </a>
+                    </li>
+                </ul>
+                <img src="images/svg_images/Paytm_Travel_Logo.svg" alt="Paytm Travel" class="img-fluid mt-3 mt-md-0 download-btn" style="max-height: 50px;">
+            </div>
 
-             <div class="box mx-auto"> 
-                <div class="inner-box">
-                    <h6>
-                        <label><input type="radio" name="gender" required>One way</label>
-                    </h6>
-                    <h6>
-                        <label><input type="radio" name="gender" required>Round Trip</label>
-                    </h6>
-                </div>
-
-                <div class="inner-box1">
-                    <div class="row py-3 px-4 d-flex">
-                        <div class="col-sm-1">
-                            <span class="item text-secondary">From</span> <br><span class="item h5">DEL</span> <br> <span>Delhi</span>
-                            <hr>
-                        </div>
-                        <div class="col-sm-1">
-                            <img src="images/svg_images/363f4432..svg" alt="">
-                        </div>
-                        <div class="col-sm-2">
-                           <span class="item text-secondary">To</span> <br><span class="item h5">BOM</span> <br><span>Mumbai,Maharashtra</span>
-                           <hr>
-                        </div>
-                       
-                        <div class="col-sm-2">
-                            <span class="item text-secondary">Departure Date</span> <br> <span class="item h5">15 Dec 24</span> <br> <span>Sunday</span>
-                            <hr>
-                        </div>
-                        <div class="col-sm-2 py-4">
-                            <span class="item text-primary h5">+Add Return</span> <br><span>Save More</span>
-                            <hr>
-                        </div>
-                        <div class="col-sm-2">
-                            <span class="item text-secondary">Travellers & Cabin Class</span> <br> <span class="item h5">1 Traveller</span><br><span>Economy</span>
-                            <hr>
-                        </div>
-                        <div class="col-sm-2">
-                            <button class="btn btn-primary btn-lg mt-4">Search Flight</button>
-                        </div>
+            <div class="flight-box p-3 p-lg-4 mb-4">
+                <div class="d-flex flex-wrap mb-3">
+                    <div class="form-check me-3">
+                        <input class="form-check-input" type="radio" name="tripType" id="oneWay" checked>
+                        <label class="form-check-label" for="oneWay">
+                            One way
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tripType" id="roundTrip">
+                        <label class="form-check-label" for="roundTrip">
+                            Round Trip
+                        </label>
                     </div>
                 </div>
 
-                <div class="inner-box2 px-4 d-flex mb-4">
-                    <span class="item text-secondary me-2">Special Fares(optional)</span>
-                    <button class="btn btn-outline-secondary rounded-pill btn-sm me-2">Armed forces</button>
-                    <button class="btn btn-outline-secondary rounded-pill btn-sm me-2">Student</button>
-                    <button class="btn btn-outline-secondary rounded-pill btn-sm">Senior Citizen</button>
+                <div class="row g-3 g-lg-4 align-items-end">
+                    <div class="col-6 col-md-4 col-lg-1 flight-option">
+                        <small class="text-secondary d-block">From</small>
+                        <h5 class="mb-0">DEL</h5>
+                        <span class="text-muted small">Delhi</span>
+                    </div>
+                    <div class="col-6 col-md-2 col-lg-1">
+                        <button class="btn btn-sm btn-outline-secondary border-0 bg-light rounded-circle pb-4 swap-btn">
+                            <img src="images/svg_images/363f4432..svg" alt="Swap" class="img-fluid">
+                        </button>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 flight-option">
+                        <small class="text-secondary d-block">To</small>
+                        <h5 class="mb-0">BOM</h5>
+                        <span class="text-muted small">Mumbai, Maharashtra</span>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 flight-option">
+                        <small class="text-secondary d-block">Departure Date</small>
+                        <h5 class="mb-0">15 Dec 24</h5>
+                        <span class="text-muted small">Sunday</span>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 flight-option">
+                        <button class="btn btn-link text-primary p-0 text-decoration-none add-return">
+                            <h5 class="mb-0">+Add Return</h5>
+                        </button>
+                        <span class="text-muted small d-block">Save More</span>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 flight-option">
+                        <small class="text-secondary d-block">Travellers & Cabin Class</small>
+                        <h5 class="mb-0">1 Traveller</h5>
+                        <span class="text-muted small">Economy</span>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <button class="btn btn-primary w-100 mt-md-0 search-flight btn-paytm mb-3">Search Flight</button>
+                    </div>
                 </div>
-             </div>
 
-             <div class="container text-center mt-5">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="images/1718869597012.avif" class="img-fluid" alt="">
+                <div class="d-flex flex-wrap align-items-center mt-3">
+                    <span class="text-secondary me-2">Special Fares(optional)</span>
+                    <button class="btn btn-outline-secondary rounded-pill btn-sm me-2 mb-2">Armed forces</button>
+                    <button class="btn btn-outline-secondary rounded-pill btn-sm me-2 mb-2">Student</button>
+                    <button class="btn btn-outline-secondary rounded-pill btn-sm mb-2">Senior Citizen</button>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="images/1718869597012.avif" class="img-fluid rounded download-btn" alt="Offer 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/1727933098781.avif" class="img-fluid rounded download-btn" alt="Offer 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/1728377300975.avif" class="img-fluid rounded download-btn" alt="Offer 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5 bg1" id="business">
+        <div class="container">
+            <h2 class="text-white mb-4 mb-lg-5">Recharge & Pay Bills on Paytm.</h2>
+
+            <div class="row g-3 g-lg-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251017535.png" class="service-icon mb-3 mx-auto" alt="Mobile Recharge">
+                            <h6 class="card-title mb-0">Recharge Prepaid Mobile</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="images/1727933098781.avif" class="img-fluid" alt="">
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251043534.png" class="service-icon mb-3 mx-auto" alt="Electricity Bill">
+                            <h6 class="card-title mb-0">Pay Electricity Bill</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="images/1728377300975.avif" class="img-fluid" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251101045.png" class="service-icon mb-3 mx-auto" alt="DTH Recharge">
+                            <h6 class="card-title mb-0">Recharge DTH Connection</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251127863.png" class="service-icon mb-3 mx-auto" alt="Gas Cylinder">
+                            <h6 class="card-title mb-0">Book Gas Cylinder</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1672827522093.png" class="service-icon mb-3 mx-auto" alt="Broadband">
+                            <h6 class="card-title mb-0">Pay Broadband & Landline Bill</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251017535.png" class="service-icon mb-3 mx-auto" alt="Education Fee">
+                            <h6 class="card-title mb-0">Pay Education Fee</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-
-    <div class="bg1" style="background-color: #21bcf9;min-height: 60vh;">
-        <div class="text-light h1 d-flex  px-5 py-4">Recharge & Pay Bills on Paytm.
-
         </div>
-
-        <ul class="icon list-unstyled d-flex gap-lg-5 px-5 justify-content-center">
-            <li class="item h6 pe-5 justify-content-around align-items-center">
-                <img src="images/1626251017535.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Recharge <br> Prepaid <br> Mobile</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-5 justify-content-between ">
-                <img src="images/1626251043534.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Pay <br> Electricity <br> Bill</span>
-                <i class="bi bi-chevron-right text-white"></i>
-                
-            </li>
-           
-            <li class="item h6 pe-5">
-                <img src="images/1626251101045.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Recharge <br> DTH <br> Connection</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-4">
-                <img src="images/1626251127863.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Book <br> Gas <br> Cylinder</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-5">
-                <img src="images/1672827522093.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Pay <br> Broadband & <br> Landline Bill</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-5">
-                <img src="images/1626251017535.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Pay <br> Education <br> Fee</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-5">
-                <img src="images/1627566096011.webp" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">All <br> Payment <br> Services</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-        </ul>
     </div>
 
-    <div class="bg" style="background-color: #f7f9fa;min-height: 130vh;">
+    
+    <div class="bg-light-blue py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 order-lg-1 order-2">
+                    <img src="images/1697527183231.avif" class="img-fluid mb-4 download-btn" style="max-height: 80px;" alt="Paytm Logo">
+                    <h1 class="fw-bold mb-4">India's Most-loved Payments App</h1>
+                    <p class="lead">
+                        Recharge & pay bills, book flights & movie tickets, invest in stocks & mutual funds, and do a lot more.
+                    </p>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <img src="images/1715933362922.avif" class="img-fluid download-btn" alt="Paytm App Screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5 bg2">
+        <div class="container">
+            <h2 class="text-white mb-5">Book & Buy on Paytm.</h2>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251017535.png" class="service-icon mb-3 mx-auto" alt="Movie Tickets">
+                            <h6 class="card-title fw-bold mb-0">Movie Tickets</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251043534.png" class="service-icon mb-3 mx-auto" alt="Flight Tickets">
+                            <h6 class="card-title fw-bold mb-0">Flight Tickets</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251101045.png" class="service-icon mb-3 mx-auto" alt="Flight Tickets">
+                            <h6 class="card-title fw-bold mb-0">Flight Tickets</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251127863.png" class="service-icon mb-3 mx-auto" alt="Train Tickets">
+                            <h6 class="card-title fw-bold mb-0">Train Tickets</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1672827522093.png" class="service-icon mb-3 mx-auto" alt="International Flights">
+                            <h6 class="card-title fw-bold mb-0">International Flights</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card service-card border-0 bg-transparent text-white h-100">
+                        <div class="card-body text-center p-3">
+                            <img src="images/1626251017535.png" class="service-icon mb-3 mx-auto" alt="Buy Insurance">
+                            <h6 class="card-title fw-bold mb-0">Buy Insurance</h6>
+                            <i class="bi bi-chevron-right d-block mt-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 order-lg-1 order-2">
+                    <img src="images/1653901470333.webp" class="img-fluid mb-4 download-btn" style="max-height: 80px;" alt="Insurance Logo">
+                    <h1 class="fw-bold mb-4">Insurance made easy.</h1>
+                    <p class="lead">
+                        Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.
+                    </p>
+                </div>
+                <div class="col-lg-5 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <img src="images/1653913927257.webp" class="img-fluid download-btn" alt="Insurance Screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5 bg-light-purple">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="images/1626077377376.webp" class="img-fluid download-btn" alt="Wealth Screenshot">
+                </div>
+                <div class="col-lg-7">
+                    <img src="images/1617696247991.webp" class="img-fluid mb-4 download-btn" style="max-height: 80px;" alt="Wealth Logo">
+                    <h1 class="fw-bold mb-4">Build Long-term Wealth & Achieve your Goals.</h1>
+                    <p class="lead">
+                        Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 order-lg-1 order-2">
+                    <h1 class="fw-bold mb-4">Financial Services by Paytm</h1>
+                    <img src="images/1617695287770.png" class="img-fluid mb-4 download-btn" style="max-height: 80px;" alt="Loan Logo">
+                    <h1 class="fw-bold mb-4">Get a Personal Loan in 2 Minutes.</h1>
+                    <p class="lead">
+                        Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.
+                    </p>
+                </div>
+                <div class="col-lg-4 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <img src="images/1653913927257.webp" class="img-fluid download-btn" alt="Loan Screenshot">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Paytm Payment Instruments</h1>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h1 class="fw-bold mb-4">Accept payments online with ease</h1>
+                    <p class="lead mb-4">
+                        Grow your business with the payment gateway that powers India's largest brands and even the Paytm App
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/1715931765508.avif" class="img-fluid download-btn" alt="Payment Gateway">
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1 order-2">
+                    <h1 class="fw-bold mb-4">In-shop payments powered by Paytm.</h1>
+                    <p class="lead mb-4">
+                        Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants
+                    </p>
+                </div>
+                <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <img src="images/1715931943699.avif" class="img-fluid download-btn" alt="In-shop Payments">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Business Tools to help your business grow</h1>
+            
+            <div class="row gy-4 gx-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-lg card-hover">
+                        <img src="images/1626081565192.webp" class="card-img-top download-btn" alt="POS Billing">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">POS Billing Software</h4>
+                            <p class="card-text">Say Hello to Smart Retail Business Management</p>
+                            <a href="#" class="text-primary fw-bold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-lg card-hover">
+                        <img src="images/1626081071077.webp" class="card-img-top download-btn" alt="Business App">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Paytm for Business App</h4>
+                            <p class="card-text">Everything you need to manage your business on your phone</p>
+                            <a href="#" class="text-primary fw-bold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-lg card-hover">
+                        <img src="images/1656568216166.webp" class="card-img-top download-btn" alt="Advertise">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Advertise on Paytm</h4>
+                            <p class="card-text">Grow your business by advertising on India's largest mobile business</p>
+                            <a href="#" class="text-primary fw-bold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-lg card-hover">
+                        <img src="images/1626081814411.webp" class="card-img-top download-btn" alt="Business Khata">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Business Khata</h4>
+                            <p class="card-text">Managing Khata made easy</p>
+                            <a href="#" class="text-primary fw-bold">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="py-5">
+        <div class="container">
             <div class="row">
-              <div class="col-lg-7 py-lg-5 px-5 justify">
-                <img src="images/1697527183231.avif" style="width: 90px; height: 90px;" class="img-fluid" alt="">
-                <div class=" text-dark h1" style="color: black; font-weight: 700; font-size: 55px; padding-top: 60px;">
-                    India's Most-loved <br> Payments App
+                <div class="col-lg-3">
+                    <img src="images/1617696247991.webp" class="img-fluid download-btn" alt="Wealth Logo">
                 </div>
-                <h6 style="color: black; font-size: 20px; padding-top: 20px; line-height:40px ;">
-                    Recharge & pay bills, book flights & movie tickets, <br> invest in stocks & mutual funds, and do a lot <br> more.
-                </h6>
-
-              </div>
-              <div class="col-lg-5 py-5">
-                <img src="images/1715933362922.avif" style="width: 100%; height: 90vh;" class="img-fluid" alt="">
-              </div>
+                <div class="col-lg-9 text-secondary">
+                    <p class="mb-3 pt-3 h5">
+                        Get started on wealth creation journey with Zero brokerage fee & no hidden charges.
+                        <a href="#" class="text-primary fw-bold">Learn More</a>
+                    </p>
+                </div>
             </div>
-    </div>
-
-    <div class="bg1" style="background-color: #214ee3;min-height: 60vh;">
-        <div class="text-light h1 d-flex  px-5 py-4">Book & Buy on Paytm.
-
-        </div>
-
-        <ul class="icon list-unstyled d-flex gap-lg-5 px-5 justify-content-center">
-            <li class="item h6 pe-5 justify-content-around align-items-center">
-                <img src="images/1626251017535.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light" style="font-weight: 700;">Movie <br> Tickets</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-5 justify-content-between ">
-                <img src="images/1626251043534.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Flight <br> Tickets</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-           
-            <li class="item h6 pe-5">
-                <img src="images/1626251101045.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Flight <br> Tickets</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-4">
-                <img src="images/1626251127863.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Train <br> Tickets</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-5">
-                <img src="images/1672827522093.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">International <br> Flights</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-            <li class="item h6 pe-5">
-                <img src="images/1626251017535.png" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Buy <br> Insurance <i class="bi bi-chevron-right text-white"></i></span>
+            
+            <div class="row gx-4 gy-4 ">
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body text-center">
+                            <img src="images/1618576143299.webp" class="img-fluid mb-3 download-btn" alt="Invest in Stocks">
+                            <h5 class="card-title">Invest in Stocks</h5>
+                        </div>
+                    </div>
+                </div>
                 
-            </li>
-            <li class="item h6 pe-5">
-                <img src="images/1627566096011.webp" style="width: 60px; height: 60px;" class="img-fluid me-5" alt="">
-                <span class="text-light">Invest <br> in Stocks</span>
-                <i class="bi bi-chevron-right text-white"></i>
-            </li>
-        </ul>
-    </div>
-
-  
-    <div class="bg" style="min-height: 90vh;">
-        <div class="row mx-auto d-flex"> 
-            <div class="col-lg-7">
-             <div class=" py-5  d-flex align-items-start gap-2" style="padding-left: 60px;">
-                 <img src="images/1653901470333.webp" style="width: 30%; " class="img-fluid me-2" alt="">
- 
-             </div>
-             <p class="h2 mx-auto fw-bold " style="width: 80%; font-size: 50px;">
-                Insurance made easy.
-             </p> 
-             <p class="h6 mx-auto py-3" style="width: 80%; line-height:25px; font-size: 20px;">
-                Buying insurance does not have to be tedious, time- <br> consuming & confusing. Paytm Insurance removes the <br> worry of getting insured by making it simple, <br> convenient & easy-to-understand.
-             </p>  
-            </div>
- 
-             <div class="col-lg-5 py-5">
-                 <img src="images/1653913927257.webp" style="width: 80%;" class="img-fluid" alt="">
-             </div>
-         </div>
-    </div>
-
-    <div class="bg" style="background-color: #ececf8;min-height: 95vh;">
-        <div class="row mx-auto d-flex" style="padding-left: 30px;">
-            <div class="col-lg-5 py-5">
-                <img src="images/1626077377376.webp" style="width: 95%;" class="img-fluid" alt="">
-            </div> 
-            <div class="col-lg-7">
-             <div class=" py-5  d-flex align-items-start gap-2" style="padding-left: 60px;">
-                 <img src="images/1617696247991.webp" style="width: 30%; " class="img-fluid me-2" alt="">
- 
-             </div>
-             <p class="h2 mx-auto fw-bold " style="width: 80%; font-size: 50px;">
-                Build Long-term <br> Wealth & Achieve <br> your Goals.
-             </p> 
-             <p class="h6 mx-auto py-3" style="width: 80%; line-height:25px; font-size: 20px;">
-                Investing on Paytm Money is transparent, low-cost and <br> commission-free. Buy stocks & mutual funds that can <br> help you create wealth & realise your dreams.
-             </p>  
-            </div>  
-         </div>
-    </div>
-
-    <div class="bg" style="min-height: 95vh;padding-top: 80px;">
-        <div class="row mx-auto d-flex"> 
-            <div class="col-lg-8">
-                <p class="h2 mx-auto fw-bold " style="width: 80%; font-size: 50px;">
-                    Financial Services by Paytm
-                 </p> 
-             <div class=" py-5  d-flex align-items-start gap-2" style="padding-left: 80px;">
-                 <img src="images/1617695287770.png" style="width: 30%; " class="img-fluid me-2" alt="">
- 
-             </div>
-             <p class="h5 mx-auto fw-bold " style="width: 80%; font-size: 45px;">
-                Get a Personal Loan in 2 <br> Minutes.
-             </p> 
-             <p class="h6 mx-auto py-3" style="width: 80%; line-height:25px; font-size: 20px;">
-                Paytm offers India’s quickest multi-purpose, hassle- <br> free loan. It is 100% digital, transparent and <br> paperless.
-             </p>  
-            </div>
- 
-             <div class="col-lg-4 py-5">
-                 <img src="images/1653913927257.webp" style="width: 80%;" class="img-fluid" alt="">
-             </div>
-         </div>
-    </div>
-
-    <div class="bg" style="min-height: 130vh;">
-        <div class="heading">
-            <h1>Paytm Payment Instruments</h1>
-        </div>
-
-        <div class="box1 mx-auto d-flex"> 
-           <div class="col-lg-6" style="margin-top: 15rem;">
-                    <p class="h1 mx-auto fw-bold" style="width: 80%;">
-                        Accept payments <br> online with ease
-                    </p> 
-                    <p class="h6 mx-auto py-3" style="width: 80%; line-height:35px; font-size: 18px;">
-                        Grow your business with the payment gateway that <br> powers India’s largest brands and even the Paytm App
-                    </p>    
-           </div>
-
-            <div class="col-lg-6 py-5">
-                <img src="images/1715931765508.avif" style="width: 90%;" class="img-fluid" alt="">
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body text-center">
+                            <img src="images/1618575899205.webp" class="img-fluid mb-3 download-btn" alt="Apply for IPO">
+                            <h5 class="card-title">Apply for IPO</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body text-center">
+                            <img src="images/1618831809222.webp" class="img-fluid mb-3 download-btn" alt="Invest in ETFs">
+                            <h5 class="card-title">Invest in ETFs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body text-center">
+                            <img src="images/1618575990183.webp" class="img-fluid mb-3 download-btn" alt="Buy Gold">
+                            <h5 class="card-title">Buy Gold</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     
-    <div class="bg" style="min-height: 130vh;">
-        <div class="box2 mx-auto d-flex"> 
-           <div class="col-lg-6" style="margin-top: 7rem;">
-                    <p class="h1 mx-auto fw-bold" style="width: 80%;">
-                        In-shop payments <br> powered by Paytm.
-                    </p> 
-                    <p class="h6 mx-auto py-3" style="width: 80%; line-height:35px; font-size: 18px;">
-                        Millions of small & big businesses use Paytm to accept <br> payments anywhere any time with a wide range of solutions <br> for all kind of merchants
-                    </p>    
-           </div>
-
-            <div class="col-lg-6 py-5">
-                <img src="images/1715931943699.avif" style="width: 90%;" class="img-fluid" alt="">
-            </div>
-        </div>
-        <div class="bg " style="min-height: 130vh;">
-            <div class="heading">
-                <h1>Business Tools to help <br> your business grow</h1>
-            </div>
-
-
-            <div class="card-group  mt-5" style="width: 95%; padding-left: 45px; gap: 20px;outline: none;">
-                <div class="card border-0">
-                  <img src="images/1626081565192.webp" class="card-img-top" alt="...">
-                  <div class="card-body" style="line-height: 35px; ">
-                    <h4 class="card-title fw-bold py-3">POS Billing <br> Software</h4>
-                    <p class="card-text" style="font-size: 20px;">Say Hello to Smart Retail <br> Business Management <br> <span class="text-body-dark fw-bold" style="font-size: 15px;">Large More</span></p>
-                  </div>
+    <div class="py-5" >
+        <div class="container">
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-3 mb-3 mb-lg-0">
+                    <img src="images/1626419838546.webp" class="img-fluid download-btn" alt="Travel Logo">
                 </div>
-
-                <div class="card border-0 ">
-                    <img src="images/1626081071077.webp" class="card-img-top" alt="">
-                    <div class="card-body" style="line-height: 35px; ">
-                      <h4 class="card-title fw-bold py-3">Paytm for <br> Business App</h4>
-                      <p class="card-text" style="font-size: 20px;">Everything you need to <br> manage your business   <br>on your phone <br> <span class="text-body-dark fw-bold" style="font-size: 15px;">Large More</span></p>
-                    </div>
-                  </div>
-                  
-
-                  <div class="card border-0">
-                    <img src="images/1656568216166.webp" class="card-img-top" alt="">
-                    <div class="card-body" style="line-height: 35px; ">
-                      <h4 class="card-title fw-bold py-3">Advertise on <br> Paytm</h4>
-                      <p class="card-text" style="font-size: 20px;">Grow your business by <br> advertising on India’s <br> largest mobile business<br> <span class="text-body-dark fw-bold" style="font-size: 15px;">Large More</span></p>
-                    </div>
-                  </div>
-                  
-
-                  <div class="card border-0">
-                    <img src="images/1626081814411.webp" class="card-img-top" alt="">
-                    <div class="card-body" style="line-height: 35px; ">
-                      <h4 class="card-title fw-bold py-3">Business <br> Khata</h4>
-                      <p class="card-text" style="font-size: 20px;">Managing Khata made <br> easy <br> <span class="text-body-dark fw-bold" style="font-size: 15px;">Large More</span></p>
-                    </div>
-                  </div>
-
-            </div>
-
-
-
-            <div class="container">
-                <div class="row py-5 justify-content-between gap-1 rounded-pill">
-                  <div class="col-lg-2">
-                    <img src="images/1617696247991.webp" style="width: 80%; " class="img-fluid me-2" alt="">
-                    <p class="py-5">
-                        Get started on wealth <br> creation journey with Zero brokerage fee & no hidden charges.
-                        <br><span class="text-primary" style="font-size: 18px;" >Learn More</span>
-                    </p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5; border-radius: 9px;">
-                    <img src="images/1618576143299.webp" style="width: 100%; " class="img-fluid" alt="">
-                    <p class="text-light h5 py-3 px-4">Invest in <br> Stocks</p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5;  border-radius: 9px;">
-                    <img src="images/1618575899205.webp" style="width: 100%; " class="img-fluid" alt="">
-                    <p class="text-light h5 py-3 px-2">Apply for IPO</p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5;  border-radius: 9px;">
-                    <img src="images/1618831809222.webp" style="width: 100%; " class="img-fluid" alt="">
-                    <p class="text-light h5 py-3 px-4">Invest in ETFs</p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5;  border-radius: 9px;">
-                    <img src="images/1618575990183.webp" style="width: 100%; " class="img-fluid" alt="">
-                    <p class="text-light h5 py-3 px-4">Buy Gold</p>
-                  </div>
-                  <!-- <div class="col-lg-2" style="border: 3px solid rgb(103, 201, 243);">
-                    <img src="images/1618576408440.webp" style="width: 100%; " class="img-fluid" alt="">
-                  </div> -->
-                </div>
-              </div>
-
-
-              <div class="container">
-                <div class="row py-5 justify-content-between gap-1 rounded-pill">
-                  <div class="col-sm-2">
-                    <img src="images/1626419838546.webp" style="width: 80%; " class="img-fluid me-2" alt="">
-                    <p class="py-5">
+                <div class="col-lg-9 text-secondary">
+                    <p class="mb-3 h5">
                         Best travel solutions with quick ticket bookings, great offers and easy refunds
-                        <br><span class="text-primary" style="font-size: 18px;" >Learn More</span>
+                        <a href="#" class="text-primary fw-bold">Learn More</a>
                     </p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5; border-radius: 9px;">
-                    <img src="images/1627566096011.webp" style="width: 50%; " class="img-fluid mx-auto" alt="">
-                    <p class="text-light h5 py-3 px-4">100% Refund With Paytm's Cancellation Protect</p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5;  border-radius: 9px;">
-                    <img src="images/1627567062180.webp" style="width: 50%; " class="img-fluid mx-auto" alt="">
-                    <p class="text-light h5 py-3 px-2">Sanitised Bus Options With TravelSafe+</p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5;  border-radius: 9px;">
-                    <img src="images/1696910636390.avif" style="width: 50%; " class="img-fluid mx-auto" alt="">
-                    <p class="text-light h5 py-3 px-4">Hassle Free Train Ticket Bookings</p>
-                  </div>
-                  <div class="col-sm-2 py-2" style="background-color: #86d6f5;  border-radius: 9px;">
-                    <img src="images/1627566396231.webp" style="width: 50%; " class="img-fluid mx-auto" alt="">
-                    <p class="text-light h5 py-3 px-4">PNR Status Check In Few Simple Clicks</p>
-                  </div>
-                  <!-- <div class="col-lg-2" style="border: 3px solid rgb(103, 201, 243);">
-                    <img src="images/1618576408440.webp" style="width: 100%; " class="img-fluid" alt="">
-                  </div> -->
                 </div>
-              </div>
+            </div>
+            
+            <div class="row gx-4 mb-5 pt-2 gy-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body py-5 text-center">
+                            <img src="images/1627566096011.webp" class="img-fluid mb-3 download-btn" style="max-height: 50px;" alt="Cancellation Protect">
+                            <h5 class="card-title">100% Refund With Paytm's Cancellation Protect</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body py-5 text-center">
+                            <img src="images/1627567062180.webp" class="img-fluid mb-3 download-btn" style="max-height: 50px;" alt="TravelSafe+">
+                            <h5 class="card-title">Sanitised Bus Options With TravelSafe+</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body py-5 text-center">
+                            <img src="images/1696910636390.avif" class="img-fluid mb-3 download-btn" style="max-height: 50px;" alt="Train Tickets">
+                            <h5 class="card-title">Hassle Free Train Ticket Bookings</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 text-white investment-card" style="background-color: #86d6f5; border-radius: 9px;">
+                        <div class="card-body py-5 text-center">
+                            <img src="images/1627566396231.webp" class="img-fluid mb-3 download-btn" style="max-height: 50px;" alt="PNR Status">
+                            <h5 class="card-title">PNR Status Check In Few Simple Clicks</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="bg" style="background-color: #ececf8;min-height: 200vh; margin-top: 8rem;">
-        <div class="col-sm-8 px-5 d-flex py-5 gap-3">
-            <h4>Download Paytm App <br> to Pay from anywhere</h4>
-            <img src="images/downloadApple.svg" style="width: 20%;" alt="">
-            <img src="images/downloadGoogle.svg" style="width: 20%;" alt="">
-        </div>
-        <div class="col-sm-4">
-        </div>
-
-        <hr class="mx-5">
-
-        <div class="py-5 px-5">
-            <span class="letter" style="font-size: 25px; padding-top: 50px;">×</span><span class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px;">Investor Relation plus</span>
-        </div>
-        <div class="d-flex gap-5 px-5 text-secondary">
-            <p>Home</p>
-            <p>Financials</p>
-            <p>Fillings & Press Release</p>
-            <p>News & Events</p>
-            <p>Corporate Governance</p>
-            <p>Resources</p>
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                More about Paytm </p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Company </p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Important Updates </p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Recharge & pay bills </p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Pay Loan EMI, Insurance Premiums & Education Fee </p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Book Travel & Entertainment</p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Investments & Miscellaneous</p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Loans and Credit Cards</p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-        <div class="px-5 py-3 d-flex align-items-end">
-          
-            <p class="text" style="color: rgb(61, 61, 61); font-weight: 500; gap: 4px; text-wrap: nowrap;">
-                <span class="letter " style="font-size: 25px; padding-top: 50px;display: inline; align-self: center;">+</span>
-                Financial Tools & Calculators</p>
-            <hr class="mx-auto" style="width: 100%;">
-        </div>
-
-    </div>
     
+<footer class="bg-light py-5">
+  <div class="container">
 
-     
+    <div class="row align-items-center text-center text-md-start">
+      
+      <!-- Left -->
+      <div class="col-md-8 mb-4 mb-md-0">
+        <h5 class="mb-3">Download Paytm App to Pay from anywhere</h5>
+
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+          <img src="images/downloadApple.svg" class="img-fluid" style="max-height:45px;">
+          <img src="images/downloadGoogle.svg" class="img-fluid" style="max-height:45px;">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+          <i class="bi bi-facebook fs-4"></i>
+          <i class="bi bi-twitter fs-4"></i>
+          <i class="bi bi-instagram fs-4"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="my-4">
+
+    <div class="row text-center text-md-start">
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6 class="fw-bold">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">About</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Careers</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6 class="fw-bold">Products</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Payments</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Loans</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Insurance</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6 class="fw-bold">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Help</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Security</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 mb-3">
+        <h6 class="fw-bold">Legal</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Terms</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Privacy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="text-center small">
+      © 2026 Paytm Clone. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="js/bootstrap.min.js"></script>
 </html>
